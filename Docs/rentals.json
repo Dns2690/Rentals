@@ -1,0 +1,22 @@
+[
+  {
+    "plate": "bmj837",
+    "id_client": "206970662",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-04",
+    "cost_day": 200,
+    "pay_card": "1234567890123456",
+    "card_expiration": "12-2026",
+    "state": "DEVUELTO"
+  },
+  {
+    "plate": "zxy145",
+    "id_client": "206790172",
+    "start_date": "2025-07-10",
+    "end_date": "2025-07-15",
+    "cost_day": 67,
+    "pay_card": "4234678954321234",
+    "card_expiration": "03-2029",
+    "state": "DEVUELTO"
+  }
+]

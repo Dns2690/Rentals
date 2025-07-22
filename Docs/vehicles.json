@@ -1,0 +1,92 @@
+[
+  {
+    "plate": "bmj837",
+    "brand": "Honda",
+    "model": "CR-V",
+    "year": 2025,
+    "color": "Negro",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "cfd912",
+    "brand": "Toyota",
+    "model": "Yaris",
+    "year": 2023,
+    "color": "Rojo",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "gtp204",
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "year": 2024,
+    "color": "Gris",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "lpn355",
+    "brand": "Suzuki",
+    "model": "Swift",
+    "year": 2022,
+    "color": "Blanco",
+    "passenger": 4,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "mkh621",
+    "brand": "Nissan",
+    "model": "Sentra",
+    "year": 2021,
+    "color": "Azul",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "rqa788",
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "color": "Plata",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "tuv900",
+    "brand": "Toyota",
+    "model": "Hilux",
+    "year": 2024,
+    "color": "Negro",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "zxy145",
+    "brand": "Ford",
+    "model": "Explorer",
+    "year": 2025,
+    "color": "Gris",
+    "passenger": 7,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "abc321",
+    "brand": "Toyota",
+    "model": "Rav4",
+    "year": 2024,
+    "color": "Verde",
+    "passenger": 5,
+    "state": "DISPONIBLE"
+  },
+  {
+    "plate": "opq567",
+    "brand": "Hyundai",
+    "model": "H1",
+    "year": "2022",
+    "color": "Blanco",
+    "passenger": 12,
+    "state": "DISPONIBLE"
+  }
+]

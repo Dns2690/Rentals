@@ -1,0 +1,62 @@
+[
+  {
+    "id_type": "fisica",
+    "id_user": "206970662",
+    "name_user": "Adela Alpizar",
+    "email": "adela@gmail.com",
+    "user": "adela@gmail.com",
+    "password": "Az123456",
+    "rol": "cliente",
+    "profession": "Educadora",
+    "address": "San Francisco de la Palmera",
+    "job": "Viento Fresco de Aguas Zarcas"
+  },
+  {
+    "id_type": "fisica",
+    "id_user": "206790172",
+    "name_user": "Denis Salazar",
+    "email": "dsalazar@gmail.com",
+    "user": "dsalazar@gmail.com",
+    "password": "Az123456",
+    "rol": "cliente",
+    "profession": "Ingeniero en sistemas",
+    "address": "San Francisco de la Palmera",
+    "job": "Cerro Cortes de Aguas Zarcas"
+  },
+  {
+    "id_type": "fisica",
+    "id_user": "207150984",
+    "name_user": "Melina Soto",
+    "email": "melina@gmail.com",
+    "user": "melina@gmail.com",
+    "password": "Ms123456",
+    "rol": "cliente",
+    "profession": "Arquitecta",
+    "address": "Los Chiles de Florencia",
+    "job": "Centro de Ciudad Quesada"
+  },
+  {
+    "id_type": "fisica",
+    "id_user": "207040331",
+    "name_user": "Kevin Rodriguez",
+    "email": "kevinr@gmail.com",
+    "user": "kevinr@gmail.com",
+    "password": "Kr123456",
+    "rol": "cliente",
+    "profession": "Mecanico",
+    "address": "Santa Clara de San Carlos",
+    "job": "Zona Franca de Muelle"
+  },
+  {
+    "id_type": "fisica",
+    "id_user": "206540764",
+    "name_user": "Luis Martinez",
+    "email": "lmartinez@gmail.com",
+    "user": "lmartinez@gmail.com",
+    "password": "lm987654",
+    "rol": "cliente",
+    "profession": "Independiente",
+    "address": "Florencia de San Carlos",
+    "job": "Gasolinera Muelle"
+  }
+]

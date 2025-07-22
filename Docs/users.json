@@ -1,0 +1,29 @@
+[
+  {
+    "id_type": "fisica",
+    "id_user": "123456789",
+    "name_user": "Admin Principal",
+    "email": "admin@hbs.com",
+    "user": "admin@hbs.com",
+    "password": "admin987",
+    "rol": "administrador"
+  },
+  {
+    "id_type": "fisica",
+    "id_user": "198765432",
+    "name_user": "Sofia Chaves",
+    "email": "sofia@hbs.com",
+    "user": "sofia@hbs.com",
+    "password": "sc123456",
+    "rol": "asistente"
+  },
+  {
+    "id_type": "fisica",
+    "id_user": "204560876",
+    "name_user": "Pedro Perez",
+    "email": "pedro@hbs.com",
+    "user": "pedro@hbs.com",
+    "password": "pp987654",
+    "rol": "asistente"
+  }
+]
