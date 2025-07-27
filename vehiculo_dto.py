@@ -6,7 +6,7 @@ class Vehicle:
         self.year = year
         self.color = color
         self.passenger = passenger
-        self.estate = "DISPONIBLE"
+        self.state = "DISPONIBLE"
 
     def to_dict(self):
         return self.__dict__
