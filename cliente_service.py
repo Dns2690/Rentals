@@ -5,7 +5,10 @@ from cliente_dto import Cliente
 
 CLIENTS_FILE = "Docs/clients.json"
 
-VALID_TYPES = {"fisica", "juridica", "dimex", "pasaporte"}
+VALID_TYPES = {"1":"fisica",
+               "2":"juridica",
+               "3":"dimex",
+               "4":"pasaporte"}
 
 
 def load_clients():
@@ -95,13 +98,13 @@ def create_client():
         La clase `Cliente` y las funciones auxiliares `input_validated`, `validate_id_number`, `load_clients` y `save_clients`.
     """
     id_type = input_validated(
-        "Tipo de identificación (fisica/juridica/dimex/pasaporte): ",
-        lambda x: x.lower() in VALID_TYPES,
-        "Tipo inválido. Debe ser: fisica, juridica, dimex o pasaporte."
+        "Tipo de identificación (1.fisica/2.juridica/3.dimex/4.pasaporte): ",
+        lambda x: x in VALID_TYPES.keys(),
+        "Opción inválida. Debe ser 1, 2, 3 o 4."
     )
     id_user = input_validated(
         "Número de identificación: ",
-        lambda x: validate_id_number(id_type, x),
+        lambda x: validate_id_number(VALID_TYPES[id_type], x),
         "Número de identificación inválido para el tipo seleccionado."
     )
 
@@ -141,7 +144,7 @@ def create_client():
         "La dirección del trabajo debe tener más de 3 letras y no contener números."
     )
 
-    new_client = Cliente(id_type, id_user, name, email, password, profession, address, job)
+    new_client = Cliente(VALID_TYPES[id_type], id_user, name, email, password, profession, address, job)
     clients.append(new_client.to_dict())
     save_clients(clients)
     print("✅ Cliente creado correctamente.")

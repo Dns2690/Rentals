@@ -5,8 +5,12 @@ from usuario_dto import User
 
 USERS_FILE = "Docs/users.json"
 
-VALID_TYPES = {"fisica", "juridica", "dimex", "pasaporte"}
-VALID_ROLES = {"administrador", "asistente"}
+VALID_TYPES = {"1":"fisica",
+               "2":"juridica",
+               "3":"dimex",
+               "4":"pasaporte"}
+VALID_ROLES = {"1":"administrador",
+               "2":"asistente"}
 
 def load_users():
     """
@@ -81,13 +85,13 @@ def create_user():
         - La clase `User` y las constantes `VALID_TYPES` y `VALID_ROLES`.
     """
     id_type = input_validated(
-        "Tipo de identificación (fisica/juridica/dimex/pasaporte): ",
-        lambda x: x.lower() in VALID_TYPES,
-        "Tipo inválido. Debe ser: fisica, juridica, dimex o pasaporte."
+        "Tipo de identificación (1.fisica/2.juridica/3.dimex/4.pasaporte): ",
+        lambda x: x in VALID_TYPES.keys(),
+        "Opción inválida. Debe ser 1, 2, 3 o 4."
     )
     id_user = input_validated(
         "Número de identificación: ",
-        lambda x: validate_id_number(id_type, x),
+        lambda x: validate_id_number(VALID_TYPES[id_type], x),
         "Número de identificación inválido para el tipo seleccionado."
     )
 
@@ -112,14 +116,14 @@ def create_user():
         "Contraseña inválida. Debe tener entre 8 y 12 caracteres."
     )
     rol = input_validated(
-        "Rol (administrador/asistente): ",
-        lambda x: x.lower() in VALID_ROLES,
-        "Rol inválido. Debe ser: administrador, asistente o cliente."
+        "Rol (1.Administrador/2.Asistente): ",
+        lambda x: x in VALID_ROLES.keys(),
+        "Opción inválida. Debe ser 1 o 2"
     )
 
 
 
-    new_user = User(id_type, id_user, name_user, email, password, rol)
+    new_user = User(VALID_TYPES[id_type], id_user, name_user, email, password, VALID_ROLES[rol])
     users.append(new_user.to_dict())
     save_users(users)
     print("✅ Usuario creado correctamente.")
