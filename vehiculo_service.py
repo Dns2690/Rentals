@@ -146,9 +146,9 @@ def edit_vehicle():
             print(f"Editando vehículo: {v['plate']}")
             v["brand"] = input(f"Nueva marca [{v['brand']}]: ") or v["brand"]
             v["model"] = input(f"Nuevo modelo [{v['model']}]: ") or v["model"]
-            v["year"] = input(f"Nuevo año [{v['year']}]: ") or v["year"]
+            v["year"] = input(f"Nuevo año [{int(v['year'])}]: ") or int(v["year"])
             v["color"] = input(f"Nuevo color [{v['color']}]: ") or v["color"]
-            v["passenger"] = input(f"Nueva capacidad [{v['passenger']}]: ") or v["passenger"]
+            v["passenger"] = input(f"Nueva capacidad [{int(v['passenger'])}]: ") or int(v["passenger"])
 
             # Validaciones simples
             if not v["brand"].replace(" ", "").isalpha() or len(v["brand"]) < 3:
@@ -157,7 +157,7 @@ def edit_vehicle():
             if not v["model"].replace(" ", "").isalnum() or len(v["model"]) < 2:
                 print("❌ Modelo inválido.")
                 return
-            if not v["year"].isdigit() or not (1990 <= int(v["year"]) <= 2025):
+            if not str(v["year"]).isdigit() or not (1990 <= int(v["year"]) <= 2025):
                 print("❌ Año inválido.")
                 return
             if not v["color"].replace(" ", "").isalpha() or len(v["color"]) < 3:

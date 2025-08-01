@@ -184,6 +184,7 @@ def edit_user():
 
             u["name_user"] = new_name_user
             u["email"] = new_email
+            u["user"] = new_email
             u["password"] = new_password
             save_users(users)
             print("✅ Usuario actualizado.")
@@ -212,6 +213,7 @@ def delete_user():
     else:
         save_users(news)
         print("🗑️ Usuario eliminado correctamente.")
+
 
 def menu_users():
     while True:

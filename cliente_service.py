@@ -190,6 +190,7 @@ def edit_client():
             print(f"Editando cliente: {c['name_user']}")
             c["name_user"] = input(f"Nuevo nombre [{c['name_user']}]: ") or c["name_user"]
             c["email"] = input(f"Nuevo correo [{c['email']}]: ") or c["email"]
+            c["user"] = c["email"]
             c["password"] = input(f"Nueva contraseña [{c['password']}]: ") or c["password"]
             c["profession"] = input(f"Nueva profesión [{c['profession']}]: ") or c["profession"]
             c["address"] = input(f"Nueva dirección [{c['address']}]: ") or c["address"]

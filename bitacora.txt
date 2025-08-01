@@ -1,4 +1,3 @@
 
-[2025-07-26 21:46:30] Usuario admin@hbs.com realizó ENTRADA
-[2025-07-30 21:30:41] Usuario admin@hbs.com realizó ENTRADA
-[2025-07-30 21:36:40] Usuario admin@hbs.com realizó ENTRADA
+
+[2025-07-31 20:11:36] Usuario admin@hbs.com realizó ENTRADA
